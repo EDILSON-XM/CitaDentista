@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    
+</head>
+
+<body>
+
+    <h1>Cita Dentista</h1>
+
+    <form action="/CitaDentista/Cita" method="post">
+
+        <div>
+            <label for="dia">Dia de la cita:</label>
+            <input type="datetime-local" name="dia" id="dia">
+
+        </div>
+
+        <div>
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" name="hora" id="hora">
+
+        </div>
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+        </div>
+
+
+        <div>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" name="apellido" id="apellido">
+
+        </div>
+
+    
+
+        <div>
+            <label for="centro">Centro:</label>
+          <select name="centro" id="centro">
+           <option value="1">Centro dental Colón</option>
+           <option value="2">Centro prótesis dental Gutierres</option>
+           <option value="3">Centro  estamología  Fidiana</option>
+           <option value="4">Centro estamología  Sector Sur</option>
+           
+          </select>
+        </div>
+
+        
+
+
+
+      
+
+
+        <div>
+            <label for="conocimiento">Premios:</label>
+            
+           <input type="radio" name="tipo" id="nueva cita">Nueva cita
+           <input type="radio" name="tipo" id="revision" checked>Revición
+          
+        
+        </div>
+
+
+       
+
+
+        <input type="submit" value="Confirmar">
+        <input type="reset" value="Limpiar">
+
+
+
+    </form>
+</body>
+
+</html>
